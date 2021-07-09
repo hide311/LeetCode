@@ -1,4 +1,4 @@
-package twoSum;
+package problems.twoSum;
 
 import org.junit.Test;
 import problems.twoSum.TwoSum3;
