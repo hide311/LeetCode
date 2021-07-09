@@ -21,6 +21,8 @@ public class ReverseInteger1 implements ReverseInteger{
         if (isOutOfInteger(answerStr, plusMinusOne)){
             return 0;
         }
+
+        //NumberFormatExceptionを使えば、isOutOfIntegerはいらなくなる
         return Integer.parseInt(answerStr) * plusMinusOne;
     }
 
