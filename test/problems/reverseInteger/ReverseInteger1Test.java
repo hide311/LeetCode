@@ -7,7 +7,7 @@ import static org.hamcrest.CoreMatchers.*;
 
 public class ReverseInteger1Test {
     private ReverseInteger CreateReverseInteger(){
-        return new ReverseInteger2();
+        return new ReverseInteger1();
     }
 
     @Test @Deprecated
