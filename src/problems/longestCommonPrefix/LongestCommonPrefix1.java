@@ -3,12 +3,8 @@ package problems.longestCommonPrefix;
 public class LongestCommonPrefix1 implements LongestCommonPrefix {
     @Override
     public String longestCommonPrefix(String[] strs) {
-        String commonPrefix = "";
+        String commonPrefix = strs[0];
         for (int i = 0; i < strs.length; i++) {
-            if (i == 0) {
-                commonPrefix = strs[i];
-                continue;
-            }
             commonPrefix = trimCommonPrefix(commonPrefix, strs[i]);
             if (commonPrefix.isEmpty()) {
                 return "";
