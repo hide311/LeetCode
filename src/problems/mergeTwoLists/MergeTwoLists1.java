@@ -3,13 +3,12 @@ package problems.mergeTwoLists;
 public class MergeTwoLists1 implements MergeTwoLists {
     @Override
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null) {
-            return l2;
-        } else if (l2 == null) {
-            return l1;
-        }
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
+
         ListNode merged = new ListNode();
         doSomething(merged, l1, l2);
+
         return merged;
     }
 
