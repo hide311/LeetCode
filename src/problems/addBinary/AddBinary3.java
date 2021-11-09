@@ -19,7 +19,7 @@ public class AddBinary3 implements AddBinary {
                 sumBinary = sum % 2;
                 carryUp = 1;
             } else {
-                sumBinary = sum;
+                sumBinary = sum % 2;
                 carryUp = 0;
             }
             sb.insert(0, sumBinary);
